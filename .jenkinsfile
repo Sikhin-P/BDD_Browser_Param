@@ -6,12 +6,12 @@ pipeline{
 	bat '''set path="C:/Users/sikhi/AppData/Local/Programs/Python/Python312"
 					set path="C:/Users/sikhi/AppData/Local/Programs/Python/Python312/Scripts"
 					pip install -r requirements.txt
-					behave .\SearchCamera.feature -D browser=Chrome  '''
+					behave ./SearchCamera.feature -D browser=Chrome  '''
 	}
 	}
 	stage("Run in Firefox"){
 	steps{
-	bat '''behave .\SearchCamera.feature -D browser=Chrome'''
+	bat '''behave ./SearchCamera.feature -D browser=Chrome'''
 	}
 	}
 	}

@@ -1,7 +1,7 @@
 pipeline
 {
     agent any
-    triggers{cron(0 25 18 28 DEC ? *)}
+    triggers{cron('0 25 18 28 DEC ? *')}
     stages
     {
         stage('Parallel Execution')
